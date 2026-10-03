@@ -7,3 +7,6 @@ menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')
 nav.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus();}});
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('[data-category]').forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter;});}));
+const quickContact=document.querySelector('.quick-contact');
+document.addEventListener('click',event=>{if(quickContact&&!quickContact.contains(event.target))quickContact.open=false;});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&quickContact?.open){quickContact.open=false;quickContact.querySelector('summary').focus();}});
