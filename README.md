@@ -23,3 +23,8 @@ The inquiry form prepares a mailto link or copies text to the clipboard. It does
 ## Verification before publishing
 
 Check both languages on desktop and mobile. Test language links, portfolio search plus category filters, Escape-to-close image viewer, required inquiry fields, project prefilling and inquiry text. Ensure sitemap URLs exist and reciprocal language annotations remain intact. Do not assert certifications, export history, shipping coverage or performance figures without company confirmation.
+
+## Signature design and route finder
+
+After the three build commands above, run `python tools/add-signature.py`.
+The appearance is in `signature.css`; `route-guide.js` contains the bilingual rule-based route matching and inquiry handoff. This is a guided selector, not an AI quotation engine. It does not store personal data, calculate prices or certify material suitability. No third-party API is required.
