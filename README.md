@@ -36,3 +36,5 @@ After add-signature.py, run tools/apply-formal.py and then tools/add-articles.py
 ## Historical photographs
 
 Run `python tools/add-history.py` after the other content scripts to restore the bilingual about-page history. Original supplied screenshots are preserved in assets/history; history.css frames their photographic regions without altering people or event content. Captions distinguish the former company Avijeh Sanat Negin Besat from the current legal company. Dates refer to post publication, not independently verified event dates. No certification or individual award is inferred from these posts.
+
+Run tools/add-patent.py after add-history.py to restore the patent certificate section. The supplied photograph is preserved unchanged. This section identifies the person named in the certificate and does not assert present legal validity, company ownership or product certification.
