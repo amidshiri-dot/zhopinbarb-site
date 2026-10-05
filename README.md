@@ -32,3 +32,7 @@ The appearance is in `signature.css`; `route-guide.js` contains the bilingual ru
 ## Articles and formal typography
 
 After add-signature.py, run tools/apply-formal.py and then tools/add-articles.py. Article text and bilingual metadata are maintained in tools/add-articles.py. Estedad is self-hosted under assets/fonts with its SIL Open Font License. formal.css controls the font and article layouts. The developer credit is applied by apply-formal.py.
+
+## Historical photographs
+
+Run `python tools/add-history.py` after the other content scripts to restore the bilingual about-page history. Original supplied screenshots are preserved in assets/history; history.css frames their photographic regions without altering people or event content. Captions distinguish the former company Avijeh Sanat Negin Besat from the current legal company. Dates refer to post publication, not independently verified event dates. No certification or individual award is inferred from these posts.
