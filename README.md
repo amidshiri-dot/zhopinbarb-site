@@ -28,3 +28,7 @@ Check both languages on desktop and mobile. Test language links, portfolio searc
 
 After the three build commands above, run `python tools/add-signature.py`.
 The appearance is in `signature.css`; `route-guide.js` contains the bilingual rule-based route matching and inquiry handoff. This is a guided selector, not an AI quotation engine. It does not store personal data, calculate prices or certify material suitability. No third-party API is required.
+
+## Articles and formal typography
+
+After add-signature.py, run tools/apply-formal.py and then tools/add-articles.py. Article text and bilingual metadata are maintained in tools/add-articles.py. Estedad is self-hosted under assets/fonts with its SIL Open Font License. formal.css controls the font and article layouts. The developer credit is applied by apply-formal.py.
